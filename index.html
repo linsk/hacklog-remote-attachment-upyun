@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Hacklog-remote-attachment-upyun : WordPress 远程附件上传插件for Upyun(又拍云).Remote attachment support for WordPress." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Hacklog-remote-attachment-upyun</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/ihacklog/hacklog-remote-attachment-upyun">Fork Me on GitHub</a>
+
+          <h1 id="project_title">Hacklog-remote-attachment-upyun</h1>
+          <h2 id="project_tagline">WordPress 远程附件上传插件for Upyun(又拍云).Remote attachment support for WordPress.</h2>
+
+          <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/ihacklog/hacklog-remote-attachment-upyun/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/ihacklog/hacklog-remote-attachment-upyun/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Hacklog Remote Attachment Upyun</h1>
+
+<h2>WordPress插件信息</h2>
+
+<hr><ul>
+<li>Contributors: ihacklog</li>
+<li>Donate link: <a href="http://ihacklog.com/donate">http://ihacklog.com/donate</a></li>
+<li>Tags: attachment,manager,admin,images,thumbnail,ftp,remote</li>
+<li>Requires at least: 3.3</li>
+<li>Tested up to: 3.3.1</li>
+<li>Stable tag: 1.4.1</li>
+</ul><hr><p>Adds remote attachments support for your WordPress blog.</p>
+
+<hr><h3>Description</h3>
+
+<p>Features: Adds remote attachments support for your WordPress blog.</p>
+
+<p>use this plugin, you can upload any files to remote ftp servers(be aware that your FTP server must has Apache or other HTTP server daemon) in WordPress.</p>
+
+<ul>
+<li>Support both single user site AND multisite.</li>
+<li>support upload files to remote FTP server.</li>
+<li>support delete files on remote FTP server.</li>
+<li>works just like the files are saved on your local server-_-.</li>
+<li>with this plugin,you can move all your local server files to remote server.</li>
+<li>after you've uninstall this plugin,you can move remote server files to local server if you'd like to do so.</li>
+</ul><p>For MORE information,please visit the <a href="http://ihacklog.com/?p=5001" title="plugin homepage">plugin homepage</a> for any questions about the plugin.    <a href="http://ihacklog.com/?p=4993" title="installation guide">installation guide</a> </p>
+
+<ul>
+<li>version 1.1.0 added compatibility with watermark plugins</li>
+<li>version 1.2.0 added duplicated file checking,so that the existed remote files will not be overwrote.</li>
+<li>version 1.2.1 fixed the bug when uploading new theme or plugin this plugin may cause it to fail.</li>
+<li>1.0.2 增加自动创建远程目录功能。解决在某些FTP服务器出现“在远程服务器创建目录失败”的问题。</li>
+<li>1.1.0 增加与水印插件的兼容性，使上传到远程服务器的图片同样可以加上水印</li>
+<li>1.2.0 增加重复文件检测，避免同名文件被覆盖。更新和完善了帮助信息。</li>
+<li>1.2.1 修正在后台上传主题或插件时的bug.</li>
+<li>1.2.7 增加三种http数据发送方式支持远程附件(curl,fsockopen,streams),方便没有curl扩展支持的朋友.</li>
+<li>1.2.8 增加对xmlrpc支持(支持通过Windows Live Writer 上传图片时自动上传到Upyun服务器)</li>
+<li>1.2.9 修复Windows Live Writer 上传图片时url不正确的bug</li>
+<li>1.3.0 修复首次使用插件时，又拍云空间使用量为0时显示“测试连接失败”的bug.增加更详细的错误信息提示。</li>
+<li>1.4.0 增加form API上传支持，可上传100MB以内大小的文件（又拍云form API目前最大只支持100MB）</li>
+</ul><p>更多信息请访问<a href="http://ihacklog.com/?p=5001" title="plugin homepage">插件主页</a> 获取关于插件的更多信息，使用技巧等.
+<a href="http://ihacklog.com/?p=4993" title="安装指导">安装指导</a> </p>
+
+<h3>Installation</h3>
+
+<ol>
+<li>Upload the whole fold <code>hacklog-remote-attachment</code> to the <code>/wp-content/plugins/</code> directory</li>
+<li>Activate the plugin through the 'Plugins' menu in WordPress</li>
+<li>Configure the plugin via <code>Settings</code> -&gt; <code>Hacklog Remote Attachment</code> menu and it's OK now,you can upload attachments(iamges,videos,audio,etc.) to the remote FTP server.</li>
+<li>If your have moved all your local server files to remote server,then you can <code>UPDATE THE DATABASE</code> so that all your attachments URLs will be OK.
+You can visit <a href="http://ihacklog.com/?p=5001" title="plugin homepage">plugin homepage</a> for detailed installation guide.</li>
+</ol><h3>Screenshots</h3>
+
+<p><img src="https://github.com/ihacklog/hacklog-remote-attachment-upyun/raw/master/screenshot-1.png" alt="截图1" title="截图1"></p>
+
+<p><img src="https://github.com/ihacklog/hacklog-remote-attachment-upyun/raw/master/screenshot-2.png" alt="截图2" title="截图2"></p>
+
+<h3>Frequently Asked Questions</h3>
+
+<p>see 
+<a href="http://ihacklog.com/?p=5001" title="Hacklog Remote Attachment FAQ">Hacklog Remote Attachment FAQ</a> </p>
+
+<h3>Upgrade Notice</h3>
+
+<h4>1.3.0 upgrade to 1.4.0</h4>
+
+<p>如果要使用<strong>表单 API 功能</strong>,注意在又拍云空间管理里面开启表单 API功能，并在插件后台选项中更新表单 API密匙. </p>
+
+<h3>Changelog</h3>
+
+<h4>1.4.1</h4>
+
+<ul>
+<li>added: HTML5 file info detect.</li>
+</ul><h4>1.4.0</h4>
+
+<ul>
+<li>added: form API uploading support.</li>
+</ul><h4>1.3.0</h4>
+
+<ul>
+<li>fixed: the bug that say "Connection failed" when the bucket is empty in the first time use this plugin.</li>
+<li>improved: get verbose error message displayed.</li>
+</ul><h4>1.2.9</h4>
+
+<ul>
+<li>fixed: Windows Live Writer file uploading bug(url incorrect).</li>
+</ul><h4>1.2.8</h4>
+
+<ul>
+<li>added: xmlrpc support (when use Windows Live Writer or other client via xmlrpc upload attahcment,the attachment will auto uploaded to remote FTP server )</li>
+</ul><h4>1.2.7</h4>
+
+<ul>
+<li>added: curl,fsockopen,streams support for http communication.</li>
+</ul><h4>1.2.6</h4>
+
+<ul>
+<li>added: duplicated thumbnail filename (this things may happen when crop is TRUE)</li>
+</ul><h4>1.2.5</h4>
+
+<ul>
+<li>changed: use simple xor cypher instead of using blow_fish</li>
+</ul><h4>1.2.4</h4>
+
+<ul>
+<li>fixe: curl connection timeout will return '',change the message to more detailed one[class UpYun].</li>
+</ul><h4>1.2.3</h4>
+
+<ul>
+<li>changed: load_textdomain param 3 uses basename(dirname()) instead of plugin_basename </li>
+<li>fixed: trim spaces on options</li>
+<li>improved: Prevent direct access to files</li>
+<li>changed: uses upyun HTTP REST API to create and delete directory,files</li>
+<li>improved: protect your API password with the strong blowfish cypher.</li>
+<li>improved: the plugin settings page can show you the space useage of your remote bucket.</li>
+</ul><h4>1.2.2</h4>
+
+<ul>
+<li>ported from Hacklog Remote Attachment</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Hacklog-remote-attachment-upyun maintained by <a href="https://github.com/ihacklog">ihacklog</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
